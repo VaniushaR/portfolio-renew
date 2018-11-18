@@ -1,25 +1,170 @@
-.App {
-  text-align: center;
+.body {
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.container-grid {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template: 50% 8% 50% repeat(3, 80%) 5% 5% / 1fr 1fr 1fr;
+  grid-template-areas:
+    'header header profile'
+    'nav-bar nav-bar nav-bar'
+    'about-me about-me about-me'
+    'skills skills skills'
+    'projects projects projects'
+    'social-feed social-feed social-feed'
+    'contact contact contact'
+    'footer footer footer';
+  grid-row-gap: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header {
+  grid-area: header;
+  padding: 3%;
+}
+.logo {
+  position: flex;
+  max-width: 100%;
+  max-height: 100%;
+}
+.profile {
+  grid-area: profile;
+  padding: 3%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.profile-pic {
+  border-radius: 5%;
+}
+
+.profile-pic:hover {
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+}
+.nav-bar {
+  grid-area: nav-bar;
+  background-color: turquoise;
+  border-block-end-style: medium;
+  border-bottom: medium dotted white;
+  border-left: medium dotted white;
+  border-right: medium dotted white;
+}
+.about-me {
+  grid-area: about-me;
+  align-items: center;
+}
+.cv {
+  grid-area: cv;
+}
+.skills {
+  grid-area: skills;
+  align-items: center;
+  justify-items: center;
+}
+.social-feed {
+  grid-area: social-feed;
+  align-items: center;
+  justify-items: center;
+}
+.slider {
+  grid-area: slider;
+}
+.projects {
+  grid-area: projects;
+  max-width: 100%;
+  max-height: 100%;
+}
+.footer-area {
+  grid-area: footer;
+}
+.contact {
+  grid-area: contact;
+}
+/*the grid ends and begin text styles*/
+.title {
+  font-family: 'Satisfy', cursive;
+  font-size: 8.5em;
+  text-align: center;
+}
+.subtitle {
+  font-family: 'Satisfy', cursive;
+  font-size: 3em;
+  text-align: center;
+  color: black;
+}
+.text-paragraph {
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 5em;
+  }
+  .container-grid {
+    display: grid;
+    grid-template: 50% 8% 50% 50% repeat(3, 80%) 5% 5% / 1fr 1fr 1fr;
+    grid-template-areas:
+      'header header header'
+      'nav-bar nav-bar nav-bar'
+      'profile profile profile'
+      'about-me about-me about-me'
+      'skills skills skills'
+      'projects projects projects'
+      'social-feed social-feed social-feed'
+      'contact contact contact'
+      'footer footer footer';
+    grid-row-gap: 5%;
+  }
+
+  .profile {
+    padding: 0%;
+    text-align: center;
+  }
+}
+
+/*.App {
+  text-align: center;
+  align-items: center;
+
+}
+
+.logo {
+  position: flex;
+
+  max-width: 100%;
+
+  max-height: 100%;
+}
+
+
+
+.carousel {
+  position: flex;
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  max-height: 500px;
+}
+
+/* fonts
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Grand Hotel', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Satisfy', cursive;
+
+.App-logo {
+  animation: App-logo-spin infinite 30s linear;
+  height: 80px;
+  background-position: bottom;
+  padding: 20%;
 }
 
 @keyframes App-logo-spin {
@@ -30,3 +175,8 @@
     transform: rotate(360deg);
   }
 }
+
+
+nice blue
+  background-color: rgb(0, 140, 255);
+*/

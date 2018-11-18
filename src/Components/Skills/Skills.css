@@ -1,0 +1,59 @@
+.card {
+  padding: 10%;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.tablero {
+  padding: 13%;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5%;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .table-grid {
+    grid-template-columns: 1fr;
+    margin-top: 90em;
+  }
+}
+.card-5 {
+  background-color: turquoise;
+  border-radius: 5%;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-4 {
+  background-color: aquamarine;
+  border-radius: 5%;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-3 {
+  background-color: DarkTurquoise;
+  border-radius: 5%;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-2 {
+  background-color: paleturquoise;
+  border-radius: 5%;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-1 {
+  background-color: lightskyblue;
+  border-radius: 5%;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-back {
+  padding: 0%;
+  background-color: white;
+  border-radius: 5%;
+  height: 90%;
+}
+.size {
+  font-size: 35px;
+}
