@@ -7,11 +7,11 @@ class Skills extends Component {
     return (
       <div>
         <div className="table-grid">
-          <h2 className="title">Skills</h2>
+          <h2 className="title shadow">Skills</h2>
           <section className="tablero">
             <ReactCardFlipper
-              width="200px"
-              height="300px"
+              width="15em"
+              height="22em"
               behavior="hover"
               innerCardClass="card-1"
             >
@@ -48,8 +48,8 @@ class Skills extends Component {
 
           <section className="tablero">
             <ReactCardFlipper
-              width="200px"
-              height="300px"
+              width="15em"
+              height="22em"
               behavior="hover"
               innerCardClass="card-2"
             >
@@ -86,8 +86,8 @@ class Skills extends Component {
           </section>
           <section className="tablero">
             <ReactCardFlipper
-              width="200px"
-              height="300px"
+              width="15em"
+              height="22em"
               behavior="hover"
               innerCardClass="card-3"
             >
@@ -120,8 +120,8 @@ class Skills extends Component {
           </section>
           <section className="tablero">
             <ReactCardFlipper
-              width="200px"
-              height="300px"
+              width="15em"
+              height="22em"
               behavior="hover"
               innerCardClass="card-4"
             >
@@ -154,8 +154,8 @@ class Skills extends Component {
           </section>
           <section className="tablero">
             <ReactCardFlipper
-              width="200px"
-              height="300px"
+              width="15em"
+              height="22em"
               behavior="hover"
               innerCardClass="card-5"
             >

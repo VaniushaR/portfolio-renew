@@ -1,15 +1,15 @@
-.hand-writing {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8em;
-  color: black;
-}
 .write-area {
-  padding: 1%;
-  text-align: center;
+  padding: 5%;
+  text-align: left;
 }
-
+@media only screen and (max-width: 600px) {
+  .write-area {
+    text-align: center;
+  }
+}
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
   font-family: 'Satisfy', cursive;
+
   */

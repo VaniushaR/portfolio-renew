@@ -25,13 +25,13 @@ class App extends Component {
           <a className="profile-card">
             <img
               src={profile}
-              className="logo profile-pic"
+              className="logo profile-pic shadow"
               alt="Vania Ramírez photograph"
             />
           </a>
         </div>
 
-        <div className="nav-bar" />
+        <div className="nav-bar shadow" />
 
         <div className="about-me">
           <AboutMe />

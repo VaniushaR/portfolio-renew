@@ -9,9 +9,9 @@
   display: grid;
   grid-template: 50% 8% 50% repeat(3, 80%) 5% 5% / 1fr 1fr 1fr;
   grid-template-areas:
-    'header header profile'
+    'header header header'
     'nav-bar nav-bar nav-bar'
-    'about-me about-me about-me'
+    'about-me about-me profile'
     'skills skills skills'
     'projects projects projects'
     'social-feed social-feed social-feed'
@@ -22,22 +22,24 @@
 
 .header {
   grid-area: header;
-  padding: 3%;
+  padding: 0%;
+  text-align: center;
 }
+
 .logo {
-  position: flex;
   max-width: 100%;
   max-height: 100%;
 }
+
 .profile {
   grid-area: profile;
-  padding: 3%;
-  align-items: center;
-  justify-content: center;
+  padding: 0%;
+  text-align: center;
 }
 
 .profile-pic {
-  border-radius: 5%;
+  border-radius: 10%;
+  margin-top: 10em;
 }
 
 .profile-pic:hover {
@@ -47,18 +49,12 @@
 .nav-bar {
   grid-area: nav-bar;
   background-color: turquoise;
-  border-block-end-style: medium;
-  border-bottom: medium dotted white;
-  border-left: medium dotted white;
-  border-right: medium dotted white;
 }
 .about-me {
   grid-area: about-me;
   align-items: center;
 }
-.cv {
-  grid-area: cv;
-}
+
 .skills {
   grid-area: skills;
   align-items: center;
@@ -66,8 +62,6 @@
 }
 .social-feed {
   grid-area: social-feed;
-  align-items: center;
-  justify-items: center;
 }
 .slider {
   grid-area: slider;
@@ -86,7 +80,7 @@
 /*the grid ends and begin text styles*/
 .title {
   font-family: 'Satisfy', cursive;
-  font-size: 8.5em;
+  font-size: 6.5em;
   text-align: center;
 }
 .subtitle {
@@ -94,20 +88,23 @@
   font-size: 3em;
   text-align: center;
   color: black;
+  padding: 3%;
 }
 .text-paragraph {
   font-family: 'Satisfy', cursive;
   font-size: 25px;
   color: white;
 }
-
+.hand-writing {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8em;
+  color: black;
+}
+/* mediaquery for small screens */
 @media only screen and (max-width: 600px) {
-  .title {
-    font-size: 5em;
-  }
   .container-grid {
     display: grid;
-    grid-template: 50% 8% 50% 50% repeat(3, 80%) 5% 5% / 1fr 1fr 1fr;
+    grid-template: 25% 8% 50% 50% repeat(3, 80%) 5% 5% / 1fr 1fr 1fr;
     grid-template-areas:
       'header header header'
       'nav-bar nav-bar nav-bar'
@@ -120,29 +117,26 @@
       'footer footer footer';
     grid-row-gap: 5%;
   }
-
+  .logo {
+    max-width: 120%;
+    max-height: 120%;
+  }
   .profile {
     padding: 0%;
     text-align: center;
   }
+  .profile-pic {
+    margin-top: 1em;
+  }
+  .title {
+    font-size: 5em;
+  }
+}
+.shadow {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-/*.App {
-  text-align: center;
-  align-items: center;
-
-}
-
-.logo {
-  position: flex;
-
-  max-width: 100%;
-
-  max-height: 100%;
-}
-
-
-
+/*
 .carousel {
   position: flex;
   width: 100%;
@@ -160,23 +154,4 @@ font-family: 'Pacifico', cursive;
 font-family: 'Roboto', sans-serif;
 font-family: 'Satisfy', cursive;
 
-.App-logo {
-  animation: App-logo-spin infinite 30s linear;
-  height: 80px;
-  background-position: bottom;
-  padding: 20%;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-nice blue
-  background-color: rgb(0, 140, 255);
 */

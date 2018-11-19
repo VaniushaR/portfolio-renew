@@ -6,7 +6,8 @@
 }
 
 .tablero {
-  padding: 13%;
+  padding: 10%;
+  margin-left: 15%;
 }
 
 .table-grid {
@@ -14,11 +15,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 5%;
   align-items: center;
+  margin-top: 20em;
 }
 @media only screen and (max-width: 600px) {
   .table-grid {
     grid-template-columns: 1fr;
-    margin-top: 90em;
+    margin-top: 38em;
   }
 }
 .card-5 {

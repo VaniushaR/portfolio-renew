@@ -1,25 +1,39 @@
+.ancor-footer:hover {
+  color: palevioletred;
+}
 .footer-style {
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 50%;
+  width: 40%;
   height: auto;
-  background-color: rgba(175, 238, 238, 0.609);
+  background-color: rgba(255, 255, 255, 0.626);
   text-align: center;
-  padding: 2%;
-  border-radius: 5%;
-  border-left-style: dotted;
-  color: white;
+  padding: 1%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 .footer-txt {
-  font-size: 200%;
+  font-size: 2em;
 }
 .footer-btn {
   background-color: transparent;
   border: none;
 }
-
 .footer-btn:hover {
-  border: 3px dashed white;
-  color: aquamarine;
+  border: 3px dashed turquoise;
 }
+
+/*
+background-color: rgba(64, 224, 208, 0.468);
+
+ div {
+  background-color: yellow;
+  padding: 20px;
+  display: none;
+}
+  
+span:hover + div {
+  display: block;
+}
+*/
