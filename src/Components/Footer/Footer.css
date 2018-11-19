@@ -5,15 +5,12 @@
   color: black;
 }
 .footer-sticky-area {
-  margin-top: 90em;
+  margin-top: 136em;
+  margin-left: 15%;
 }
 @media only screen and (max-width: 600px) {
   .footer-sticky-area {
-    margin-top: 330em;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .footer-sticky-area {
-    margin-top: 330em;
+    margin-top: 265em;
+    margin-left: 5%;
   }
 }

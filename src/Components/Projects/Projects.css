@@ -1,5 +1,5 @@
 .cards-grid {
-  margin-top: 20em;
+  margin-top: 45em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3%;
@@ -12,7 +12,7 @@
 @media only screen and (max-width: 600px) {
   .cards-grid {
     grid-template-columns: 1fr;
-    margin-top: 204em;
+    margin-top: 150em;
     padding: 5%;
     grid-gap: 5%;
   }
@@ -26,11 +26,12 @@
 .card-titles {
   padding: 10%;
 }
+
 .card-container {
   width: 95%;
-  background-color: azure;
-  box-shadow: 5px 10px #70707085;
+  background-color: rgba(247, 187, 198, 0.79);
   padding: 2%;
+  border-radius: 5%;
 }
 
 .project-img {

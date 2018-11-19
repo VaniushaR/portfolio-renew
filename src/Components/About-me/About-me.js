@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Typing from 'react-typing-animation';
 import './About-me.css';
+
 class AboutMe extends Component {
   render() {
     return (
-      <div className="write-area">
-        <Typing speed={65}>
+      <div className="write-area shadow">
+        <Typing speed={15}>
           <h2 className="subtitle">Hi! I'm Vania</h2>
           <Typing.Delay ms={2000} />
           <section className="hand-writing">

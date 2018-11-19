@@ -2,6 +2,9 @@ import React, { Component, Fragment } from 'react';
 import posed from 'react-pose';
 import SocialData from './SocialData';
 import './Social-Network.css';
+import AnimatedWork from '../Animation/Animation';
+import CVE from '../../Assets/English CV.pdf';
+import CVS from '../../Assets/Español CV.pdf';
 
 const Content = posed.div({
   closed: { height: 0 },
@@ -16,30 +19,40 @@ class SocialNetwork extends Component {
     return (
       <div>
         <div className="container-sn">
-          <h1 className="title title-sn">Social Network</h1>
           <section className="static-sn">
             <Fragment>
-              {SocialData.map(({ title, content, link }, i) => (
-                <Fragment>
-                  <h2
-                    className="box-social"
-                    onClick={() =>
-                      this.setState({ open: open === i ? false : i })
-                    }
-                  >
-                    {open === i ? ' ☞   ' : ' ⇣   '}
-                    {title}
-                  </h2>
-                  <Content
-                    className="content"
-                    pose={open === i ? 'open' : 'closed'}
-                  >
-                    <div className="content-wrapper">
-                      <a href={link}>{content}</a>
-                    </div>
-                  </Content>
-                </Fragment>
-              ))}
+              <h1 className="title title-sn shadow">Social Network</h1>
+              {SocialData.map(
+                ({ title, content, link, content2, content3 }, i) => (
+                  <Fragment>
+                    <h2
+                      className="box-social shadow"
+                      onClick={() =>
+                        this.setState({ open: open === i ? false : i })
+                      }
+                    >
+                      {open === i ? ' ☞   ' : ' ⇣   '}
+                      {title}
+                    </h2>
+                    <Content
+                      className="content shadow"
+                      pose={open === i ? 'open' : 'closed'}
+                    >
+                      <div className="content-wrapper">
+                        <a href={link} download>
+                          {content}
+                        </a>
+                        <a href={CVS} download>
+                          {content2}
+                        </a>
+                        <a href={CVE} download>
+                          {content3}
+                        </a>
+                      </div>
+                    </Content>
+                  </Fragment>
+                )
+              )}
             </Fragment>
           </section>
         </div>

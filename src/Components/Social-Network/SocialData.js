@@ -14,5 +14,10 @@ export default [
     title: 'LinkedIn',
     content: `Watch more details about my career`,
     link: `https://www.linkedin.com/in/vaniaramirezmx/`
+  },
+  {
+    title: 'Get my resume',
+    content2: `Spanish    `,
+    content3: `    English`
   }
 ];

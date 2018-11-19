@@ -5,8 +5,8 @@ class Projects extends Component {
   render() {
     return (
       <div className="cards-grid">
-        <h3 className="title">Projects</h3>
-        <div className="card-container">
+        <h3 className="title shadow">Projects</h3>
+        <div className="card-container shadow">
           <div className="card-hoverable">
             <img
               src="https://raw.githubusercontent.com/VaniushaR/nierika/master/src/assets/Documentation/Nierika-login.png"
@@ -28,7 +28,7 @@ class Projects extends Component {
             </div>
           </div>
         </div>
-        <div className="card-container">
+        <div className="card-container shadow">
           <div className="card-hoverable">
             <img
               src="https://raw.githubusercontent.com/VaniushaR/cdmx-2018-06-bc-core-am-burger-queen/master/src/Assets/Documentation/Ipad.png"
@@ -50,7 +50,7 @@ class Projects extends Component {
             </div>
           </div>
         </div>
-        <div className="card-container">
+        <div className="card-container shadow">
           <div className="card-hoverable">
             <img
               src="https://raw.githubusercontent.com/VaniushaR/MxHacksV-Callejeros/master/assets/Documentation/Callejeros.png"
